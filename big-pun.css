@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Barlow:wght@300&display=swap');
+
+body {
+  margin: 0;
+  background-color: #F9F9F9;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.font-slab {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 2rem;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #404040;
+  -webkit-text-fill-color: transparent;
+}
+.font-barlow {
+  font-family: 'Barlow', sans-serif;
+  font-weight:300;
+}
+.cursor-default {
+  cursor: default;
+}
+.items-center {
+  justify-items: center;
+}
+.grid {
+  display: grid;
+}
+.flex {
+  display: flex;
+}
+#main {
+  width: 100vw;
+ /* height: auto;*/
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 42% 32% 25%;
+}
+#birth, #death {
+  position:sticky;
+  top:5%;
+  align-self:center;
+  text-align:center;
+  grid-row: 1;
+}
+#birth {
+  grid-column: 1;
+}
+#death {
+  grid-column: 3;
+}
+#tribute-header {
+  flex-direction: column;
+  grid-column: 2;
+  /* max-height:100vh; */
+  /* height: 100vh; */
+}
+#title {
+  margin: 0;
+  padding: 2.5rem 1rem;
+  text-align: center;
+}
+#img-div {
+  flex-direction:column;
+  height: calc(100% - 2rem);
+}
+#img-caption {
+  margin-top: 1em;
+  text-align: center;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+}
+#image {
+  margin: 0 auto;
+  /* max-width: 85%; */
+  height:auto;
+  min-height: 78vh;
+  max-height: calc(100% - 10rem);
+  box-shadow: #0000003d 0 3px 8px;
+}
+#tribute-info {
+  grid-column:2;
+  grid-row:2;
+  /* width:100%; */
+  /* height:20vh; */
+}
+#tribute-info p {
+  padding: 0 10%;
+  text-align: justify;
+  letter-spacing: .15rem;
+  line-height: 2rem;
+}
+#tribute-footer {
+  grid-row: 3;
+  grid-column: 1 / 4;
+  /* overflow:hidden; */
+  /* align-items:end; */
+}
+#image2 {
+  width:100vw;
+  /* height:70vh; */
+  /* max-height:70vh; */
+  object-fit:cover;
+  object-position:0 -7rem;
+}
+#links {
+  justify-content:space-between;
+  margin:3.5% 0;
+}
+#links a {
+  font-family: 'Alfa Slab One', cursive;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  line-height: 2.5rem;
+  color: #9B3F4C;
+  text-decoration:none;
+}
+#links a:hover {
+  text-decoration:underline 2px;
+  text-underline-offset: 3px;
+}
+
+////////////////////////////////////////////////////////////////////////
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Barlow:wght@100;200;300;400&display=swap');
+
+body {
+  margin: 0;
+  background-color: #F9F9F9;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+#main {
+  width: 100vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 100vh 107vh 78vh;
+  justify-items: center;
+}
+#birth, #death {
+  align-self:center;
+  text-align:center;
+  grid-row: 1;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 2rem;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #404040;
+  -webkit-text-fill-color: transparent;
+  position:sticky;
+  top:13%;
+  z-index:-1;
+}
+#birth {
+  grid-column: 1;
+}
+#death {
+  grid-column: 3;
+}
+#tribute-header {
+  justify-items: center;
+  display: grid;
+  grid-column: 2;
+  grid-template-rows: 8rem 1fr;
+}
+#title {
+  cursor:default;
+  padding: 2.5rem 1rem;
+  margin: 0;
+  text-align: center;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 2rem;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #404040;
+  -webkit-text-fill-color: transparent;
+}
+#img-div {
+  display:flex;
+  flex-direction:column;
+  justify-items: center;
+}
+#img-caption {
+  margin-top: 1em;
+  text-align: center;
+  font-family: 'Barlow', sans-serif;
+  font-weight:300;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+  cursor: default;
+}
+#image {
+  margin: 0 auto;
+  max-width: 85%;
+  height: auto;
+  max-height: 78vh;
+  box-shadow: #0000003d 0px 3px 8px;;
+}
+#tribute-info {
+  grid-column:2;
+  grid-row:2;
+  width:100%;
+  height:100vh;
+}
+#tribute-info p {
+  padding: 0 10%;
+  text-align: justify;
+  font-family: 'Barlow', sans-serif;
+  font-weight:300;
+  letter-spacing: .15rem;
+  line-height: 2rem;
+}
+
+#tribute-footer {
+  grid-column: 1 / 4;
+  grid-row: 3;
+  overflow:hidden;
+  display:flex;
+  align-items:end;
+}
+#image2 {
+  width:100vw;
+  height:78vh;
+  object-fit:cover;
+  object-position:0 -5.1rem;
+  z-index:1;
+}
+#links {
+  display:flex;
+  justify-content:space-between;
+  margin:3.5% 0;
+  z-index:3;
+}
+#links a {
+  font-family: 'Alfa SLab One', cursive;
+  letter-spacing: .15rem;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+  color: #9B3F4C;
+  text-decoration:none;
+}
+#links a:hover {
+  text-decoration:underline 2px;
+  text-underline-offset: 3px;
+}
+#links span {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 2rem;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #404040;
+  -webkit-text-fill-color: transparent;
+  cursor:default;
+}
